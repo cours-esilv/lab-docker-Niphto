@@ -1,0 +1,2 @@
+docker exec -it myapp-back-container /bin/bash
+cat /etc/*release

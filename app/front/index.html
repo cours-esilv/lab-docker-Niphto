@@ -34,7 +34,7 @@
         window.onload = async () => {
             let someData = await promiseOfSomeJsonData;
             console.log(someData)
-            document.getElementById('time').innerHTML = someData.time 
+            document.getElementById('time').innerHTML = someData.time
             document.getElementById('env').innerHTML = someData.environment
             document.getElementById('path').innerHTML = someData.result
             document.getElementById('hostname').innerHTML = someData.hostname
@@ -43,34 +43,34 @@
 </head>
 
 <body>
-    <h1>API informations</h1>
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Value</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>API time</td>
-            <td id="time"></td>
-            <td>Time returned dynamically by API</td>
-        </tr>
-        <tr>
-            <td>API environment</td>
-            <td id="env"></td></td>
-            <td>Environment variable with which you started the API</td>
-        </tr>
-        <tr>
-            <td>API called path</td>
-            <td id="path"></td>
-            <td>Hard coded value in front which calls backend</td>
-        </tr>
-        <tr>
-            <td>API hostname</td>
-            <td id="hostname"></td>
-            <td>The host on which the API currently run</td>
-        </tr>
-    </table>
+<h1>API informations</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>API time</td>
+        <td id="time"></td>
+        <td>Time returned dynamically by API</td>
+    </tr>
+    <tr>
+        <td>API environment</td>
+        <td id="env"></td></td>
+        <td>Environment variable with which you started the API</td>
+    </tr>
+    <tr>
+        <td>API called path</td>
+        <td id="path"></td>
+        <td>Hard coded value in front which calls backend</td>
+    </tr>
+    <tr>
+        <td>API hostname</td>
+        <td id="hostname"></td>
+        <td>The host on which the API currently run</td>
+    </tr>
+</table>
 </body>
 
 </html>

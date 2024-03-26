@@ -1,0 +1,2 @@
+docker run -d -p 5000:5000 --name myapp-back-container -e CURRENT_ENVIRONMENT=development niphto/myapp-back:latest
+docker run -d -p 80:80 --name myapp-front-container -e WS_BACK_URL=http://localhost:5000 niphto/myapp-front:latest
